@@ -1,0 +1,23 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: lxd
+lint:
+  name: yamllint
+platforms:
+  - name: molecule-traefik-debian-10
+    source:
+      type: image
+      mode: pull
+      alias: debian/buster/amd64
+      config:
+        security.nesting: 'true'
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

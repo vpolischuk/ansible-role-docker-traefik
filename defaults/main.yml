@@ -1,0 +1,10 @@
+---
+# defaults file for ansible-role-traefik
+traefik_container_name: traefik
+traefik_image_name: traefik:latest
+traefik_host_dir: /srv/docker/traefik
+traefik_domain_name: traefik.localdomain
+traefik_cloudflare_dns_api_token: ""
+traefik_acme_email: "root@localhost"
+traefik_admin_user: admin
+traefik_admin_pass: admin
