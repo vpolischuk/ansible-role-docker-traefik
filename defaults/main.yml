@@ -7,4 +7,4 @@ traefik_domain_name: traefik.localdomain
 traefik_cloudflare_dns_api_token: ""
 traefik_acme_email: "root@localhost"
 traefik_admin_user: admin
-traefik_admin_pass: admin
+traefik_admin_pass: "$apr1$26jtbeOT$jfGDD.fO.WSJ0g7sEDzI6"
